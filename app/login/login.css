@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'MyFont';
+  src:url('fonts/Trebuchet MS.ttf') format('truetype');
+}
 .background
 {
   background-image: url('images/login-page.png');
@@ -20,7 +24,7 @@ span.input-group-addon i {
 }
 
 input,button{
-  font-family: Trebuchet MS;
+  font-family: MyFont;
 }
 
 .login-box{
@@ -40,7 +44,7 @@ padding-top: 50px;
 
 h3{
   color: white;
-  font-family: Trebuchet MS;
+  font-family: MyFont;
 }
 
 .login-button{
@@ -56,5 +60,5 @@ width: 110%;
 }
 
 .facebook-login {
-  font-family: Trebuchet MS;
+  font-family: MyFont;
 }
