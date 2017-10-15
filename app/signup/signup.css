@@ -4,14 +4,19 @@
   
 }*/
 
+@font-face {
+  font-family: 'MyFont';
+  src:url('fonts/Trebuchet MS.ttf') format('truetype');
+}
+
 .heading{
  text-align:center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: MyFont;
 }
 
 input,a,label,textarea
 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: MyFont;
 }
 
 .background
@@ -66,7 +71,7 @@ span.input-group-addon i {
 .signup-button{
   text-align: center;
   width:100%;
-  font-family: Trebuchet MS;
+  font-family: MyFont;
 }
 
 input{
