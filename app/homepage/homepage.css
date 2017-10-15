@@ -1,8 +1,13 @@
+@font-face {
+  font-family: 'MyFont';
+  src:url('fonts/Trebuchet MS.ttf') format('truetype');
+}
+
 .login-button {
   
   width: 100%;
   height: 55px;
-  font-family: Trebuchet MS;
+  font-family: MyFont;
   
 }
 
@@ -11,7 +16,7 @@
 }
 
 .font-class{
-  font-family: Trebuchet MS;
+  font-family: MyFont;
   text-align: center;
   color:white;
 }
