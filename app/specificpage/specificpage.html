@@ -1,0 +1,93 @@
+<link rel = "stylesheet" href = "specificpage/specificpage.css"/>
+<div class = "outer">
+  <nav class="navbar navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Planet Safari</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a ng-click = "$ctrl.goToHome()">Home</a></li>
+				<li class="active"><a ng-click = "">{{$ctrl.bikeName}}</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	       <li><a ng-click = "$ctrl.goToProfile()">Profile <span class=" glyphicon glyphicon-user"></span></a>
+	        <!--<ul class="dropdown-menu">
+	          <li><a href="#">Orders</a></li>
+	          <li><a href="#">About</a></li>
+	          <li><a href="#">Page 1-3</a></li>
+	        </ul>-->
+	      </li>
+	      <li><a href="#">Logout <span class="glyphicon glyphicon-log-in"></span></a></li>
+	    </ul>
+	  </div>
+	</nav>
+<div class = "container">
+	<h1 align = "center">{{$ctrl.bikeName}}</h1>
+	<br/>
+	<div class = "row">
+		<div class = "col-md-6">
+			<!--<div class = "thumbnail">
+				<img src="" id = "bike-image" alt="{{$ctrl.bikeName}}" style="width:100%;height:150%">
+          <div class="caption">
+            <p>{{$ctrl.bikeName}}</p>
+          </div>
+			</div>-->
+			<div class="w3-card-4">
+  <img id = "bike-image" alt="{{$ctrl.bikeName}}" style="width:100%;height:90%">
+  <div class="w3-container w3-center">
+    <p class = "bike-name">{{$ctrl.bikeName}}</p>
+  </div>
+</div>
+		</div>
+		<div class = "col-md-6 tariff-box">
+			<table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th style="border-color:#0E0B16;">Duration</th>
+        <th style="border-color:#0E0B16;">Weekdays</th>
+        <th style="border-color:#0E0B16;">Weekends</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border-color:#0E0B16;">Upto 8 hours</td>
+        <td style="border-color:#0E0B16;">{{$ctrl.weekday8}}</td>
+        <td style="border-color:#0E0B16;">{{$ctrl.weekend8}}</td>
+      </tr>
+      <tr>
+        <td style="border-color:#0E0B16;">8 hours and above</td>
+        <td style="border-color:#0E0B16;">{{$ctrl.weekdayMore8}}</td>
+        <td style="border-color:#0E0B16;">{{$ctrl.weekendMore8}}</td>
+      </tr>
+    </tbody>
+  </table>
+<h6 align = "center"><b>{{$ctrl.kmLimit}}</b></h6>
+<!-- <div class = "row">
+	<div class = "col-md-4"></div>
+	<div class = "col-md-4">
+		 <div class = "col-md-1"></div>
+		<div class = "col-md-10">
+			<form>
+				<div class="radio">
+						<label><input type="radio" name="radio" id = "below8">Below 8 km</label>
+					</div>
+					<div class="radio">
+						<label><input type="radio" name="radio" id = "above8">Above 8 km</label>
+					</div>
+				</form>
+		</div> 
+		<div class = "col-md-1"></div>
+	</div>
+	<div class = "col-md-4"></div>
+</div>
+<br/>
+<div class = "row">
+	<div class = "col-md-4"></div>
+	<div class = "col-md-4">
+<input type = "button" class = "btn btn-default book-button" value = "Book now" ng-click = "$ctrl.book()"/>
+</div>
+<div class = "col-md-4"></div>
+		</div> -->
+	</div>
+</div>
+</div>

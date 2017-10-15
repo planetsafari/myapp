@@ -1,0 +1,60 @@
+.background
+{
+  background-image: url('images/login-page.png');
+  background-size: cover;
+     overflow: hidden;
+     min-height: 100%;
+     height:100vh;
+}
+
+.layer
+{
+  background-color: rgba(214, 224, 245,0.7);
+  min-height: 100%;
+  overflow: hidden;
+}
+
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+}
+
+input,button{
+  font-family: Trebuchet MS;
+}
+
+.login-box{
+  margin-top: 20vh;
+  background-color: rgba(76, 158, 217,0.8);
+  /*border-color: white;*/
+  border-radius: 10px;
+  /*border-width: 10px;*/
+height: 375px;
+padding-top: 50px;
+}
+
+.signup-bt{
+  position: relative;
+  top:15px;
+}
+
+h3{
+  color: white;
+  font-family: Trebuchet MS;
+}
+
+.login-button{
+margin-left: -15px;
+width: 110%;
+}
+
+.btn-facebook {
+    background-color: rgb(33, 62, 124);
+    color: white;
+    position: relative;
+    top:30px;
+}
+
+.facebook-login {
+  font-family: Trebuchet MS;
+}

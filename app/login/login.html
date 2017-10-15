@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="login/login.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '305164979909938',
+      autoLogAppEvents: true,
+      xfbml: true,
+      version: 'v2.9'
+    });
+
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  function fb_login() {
+    FB.login(function(response) {
+      if (response.status == "connected") {
+        //document.getElementById("status").innerHTML="wel come";
+        alert("add_proper URL here");
+      } else if (response.status == "not_authorized") {
+        document.getElementById("status").innerHTML = "wellll";
+      } else {
+        document.getElementById("status").innerHTML = "wellll facebook";
+
+      }
+
+    });
+  }
+</script>
+
+<div id="status"></div>
+
+
+<div class="background">
+  <div class="layer">
+    <!--<div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <form>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4"></div>
+        </div>-->
+    <div class="row">
+      <div class="col-md-8"></div>
+      <div class="col-md-3 col-xs-12 login-box">
+        <h3 align="center">Login</h3>
+        <br/>
+        <form name = "loginForm">
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user fa-lg" aria-hidden="true"></i></span>
+            <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email id" ng-model="$ctrl.email" required/>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" ng-model="$ctrl.password" required/>
+          </div>
+        </div>
+        <br/>
+
+        <div class="col-md-12">
+          <button class="form-control btn btn-default login-button" ng-disabled="loginForm.$invalid" ng-click="$ctrl.loginUser()">Login</button>
+        </div>
+        <br>
+
+        <div class="col-md-12">
+          <button class="form-control btn btn-default login-button signup-bt" ng-click="$ctrl.signup()">Sign-Up</button>
+        </div>
+
+        <!-- <div class="col-md-12">
+          <button class="form-control btn btn-default login-button signup-bt btn btn-block btn-social btn-facebook" onclick="fb_login()"><span class="fa fa-facebook" aria-hidden="true"></span> Facebook</button>
+        </div> -->
+        </form>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+</div>

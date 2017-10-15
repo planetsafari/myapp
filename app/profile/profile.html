@@ -1,0 +1,74 @@
+<link rel = "stylesheet" href = "profile/profile.css"/>
+<div class = "outer">
+  <nav class="navbar navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Planet Safari</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a ng-click = "$ctrl.goToHome()">Home</a></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	       <li class = "active"><a ng-click = "">Profile <span class=" glyphicon glyphicon-user"></span></a>
+	        <!--<ul class="dropdown-menu">
+	          <li><a href="#">Orders</a></li>
+	          <li><a href="#">About</a></li>
+	          <li><a href="#">Page 1-3</a></li>
+	        </ul>-->
+	      </li>
+	      <li><a href="#">Logout <span class="glyphicon glyphicon-log-in"></span></a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class = "col-md-3"></div>
+<div class = "col-md-6">
+	<div class="w3-card-4">
+
+<header class="w3-container w3-dark-grey">
+  <h3 class = "card-heading">Me</h3>
+</header>
+
+<div class="w3-container">
+	<div class="row">
+		<div class = "col-md-4"></div>
+		<div class = "col-md-4">
+  <img src="profile/images/user-icon.png" alt="Avatar" class="user-image img-rounded user-image" alt="Cinque Terre" width="100" height="100" style="
+    margin-left: 25%;" class="w3-left w3-circle">
+		</div>
+	<div class = "col-md-4"></div>
+	</div>
+
+	<br/>
+	<div class="row">
+		<div class = "col-md-3"></div>
+		<div class = "col-md-6">
+  		<table class = "col-md-12 table table-bordered">
+				<tr>
+					<td>Name</td>
+					<td id = "name">{{$ctrl.name}}</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td id = "email">{{$ctrl.email}}</td>
+				</tr>
+				<tr>
+					<td>Phone No.</td>
+					<td id = "phoneno">{{$ctrl.phoneno}}</td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td id = "address">{{$ctrl.address}}</td>
+				</tr>
+  		</table>
+		</div>
+	<div class = "col-md-3"></div>
+	</div>
+</div>
+
+<!-- <button class="w3-button w3-block w3-dark-grey update-button">Update</button> -->
+
+</div>
+</div>
+<div class = "col-md-3"></div>
+<div>

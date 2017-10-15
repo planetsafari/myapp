@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'MyFont';
+  src:url('JosefinSans-Regular.ttf') format('truetype');
+}
+
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.56);
+    border-color:rgba(0, 0, 0, 0.56);
+}
+
+.navbar{
+  font-family: Trebuchet MS;
+}
+
+.tariff-box{
+    margin-top:10vh;
+}
+
+td{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+.caption{
+    text-align: center;
+    
+}
+
+.bike-name{
+    margin-top:15px;
+}
+
+.container,h6{
+    font-family: Trebuchet MS;
+}
+
+h1{
+    font-family: MyFont;
+    font-weight: bold;
+}
+
+.table-bordered{
+    border-color:#0E0B16;
+}
+
+.outer{
+        height: 100vh;
+        background-color: rgba(231,223,221,0.5);
+}
+
+.book-button{
+    width:100%;
+}

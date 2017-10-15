@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'MyFont';
+  src:url('JosefinSans-Regular.ttf') format('truetype');
+}
+
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.56);
+    border-color:rgba(0, 0, 0, 0.56);
+}
+
+.navbar{
+  font-family: Trebuchet MS;
+}
+
+.card-heading {
+    text-align: center;
+    font-family: MyFont;
+    font-weight: bold;
+}
+
+table{
+    font-family: Trebuchet MS;
+}
+
+.user-image{
+    cursor: pointer;
+}
+
+.update-button{
+    font-family: Trebuchet MS;
+}
+
+.outer{
+        height: 100vh;
+        background-color: rgba(231,223,221,0.5);
+}
+

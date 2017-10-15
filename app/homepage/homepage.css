@@ -1,0 +1,37 @@
+.login-button {
+  
+  width: 100%;
+  height: 55px;
+  font-family: Trebuchet MS;
+  
+}
+
+.login-row{
+  margin-top: 50%;
+}
+
+.font-class{
+  font-family: Trebuchet MS;
+  text-align: center;
+  color:white;
+}
+
+.background
+{
+  background-image: url('images/1.jpg');
+  background-size: cover;
+     
+     min-height: 100%;
+     height:100vh;
+}
+
+.layer
+{
+  background-color: rgba(214, 224, 245,0.3);
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.font-class-1{
+  margin-top: 10px;
+}
