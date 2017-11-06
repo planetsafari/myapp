@@ -28,7 +28,7 @@ component('login', {
             location.href = '#!/login/dashboard/'+self.response;
         }
       };
-      xhttp.open("POST", "http://localhost/login.php", true);
+      xhttp.open("POST", "https://stormy-harbor-19273.herokuapp.com/login.php", true);
       xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhttp.send("email="+this.email+"&password="+this.password);
       
