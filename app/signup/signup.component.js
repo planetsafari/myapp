@@ -68,7 +68,7 @@ angular.
           location.href = '#!/login/dashboard/'+self.userId;
         }
       };
-      xhttp.open("POST", "http://localhost/signup.php", true);
+      xhttp.open("POST", "https://stormy-harbor-19273.herokuapp.com/signup.php", true);
       xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhttp.send("name="+this.username+"&password="+this.password+"&email="+this.mail+"&phoneno="+this.no+"&address="+this.address);
       }
